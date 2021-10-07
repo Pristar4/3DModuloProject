@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Style.uss?fileID=7433441132597879392&amp;guid=47fda4fb6af51c24394f346062cd1012&amp;type=3#Style" />
+    <ui:VisualElement name="Background" style="background-color: rgba(0, 0, 0, 0); height: 97px; width: 501px; flex-grow: 1; align-items: center; justify-content: center;">
+        <ui:VisualElement style="height: 199px; width: 164px; background-color: rgba(255, 255, 255, 255); border-top-left-radius: 15px; border-bottom-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; align-items: center; justify-content: center;">
+            <ui:Label text="Main Menu" display-tooltip-when-elided="true" style="height: 28px; width: 109px; font-size: 20px; -unity-text-align: middle-center; position: absolute; top: 20px;" />
+            <ui:Button text="Start Game" display-tooltip-when-elided="true" name="start-button" class="button-style" />
+            <ui:Button text="Button" display-tooltip-when-elided="true" name="message-button" class="button-style" />
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="message-text" style="display: none;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
