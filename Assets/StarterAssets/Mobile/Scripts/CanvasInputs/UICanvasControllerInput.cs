@@ -1,3 +1,4 @@
+using StarterAssets;
 using UnityEngine;
 
 namespace StarterAssets
