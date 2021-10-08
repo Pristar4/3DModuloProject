@@ -1,37 +1,36 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Cinemachine;
 using StarterAssets;
-using UnityEngine.ProBuilder.MeshOperations;
+using UnityEngine;
 
-public class ThirdPersonShooterControler : MonoBehaviour
+namespace _3DProject.Scripts
 {
-    [SerializeField] private CinemachineVirtualCamera aimVirtualCamera;
-    [SerializeField] private float normalSensitivity;
-    [SerializeField] private float aimSensitivity;
-
-    private ThirdPersonController thirdPersonController;
-    private StarterAssetsInputs starterAssetsInputs;
-
-    private void Awake()
+    public class ThirdPersonShooterControler : MonoBehaviour
     {
-        thirdPersonController = GetComponent<ThirdPersonController>();
-        starterAssetsInputs = GetComponent<StarterAssetsInputs>();
-    }
+        [SerializeField] private CinemachineVirtualCamera aimVirtualCamera;
+        [SerializeField] private float normalSensitivity;
+        [SerializeField] private float aimSensitivity;
 
-    private void Update()
-    {
-        if (starterAssetsInputs.aim)
+        private ThirdPersonController _thirdPersonController;
+        private StarterAssetsInputs _starterAssetsInputs;
+
+        private void Awake()
         {
-            thirdPersonController.SetSensitivity(aimSensitivity);
-            aimVirtualCamera.gameObject.SetActive(true);
+            _thirdPersonController = GetComponent<ThirdPersonController>();
+            _starterAssetsInputs = GetComponent<StarterAssetsInputs>();
         }
-        else
+
+        private void Update()
         {
-            thirdPersonController.SetSensitivity(normalSensitivity);
-            aimVirtualCamera.gameObject.SetActive(false);
+            if (_starterAssetsInputs.aim)
+            {
+                _thirdPersonController.SetSensitivity(aimSensitivity);
+                aimVirtualCamera.gameObject.SetActive(true);
+            }
+            else
+            {
+                _thirdPersonController.SetSensitivity(normalSensitivity);
+                aimVirtualCamera.gameObject.SetActive(false);
+            }
         }
     }
 }
