@@ -10,21 +10,25 @@ Assets/Plugins/Editor/JetBrains*
 .vscode/
 
 
+
+
+
 ### Unity ###
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ss]andbox/
-[Pp]lugins/
-[Ll]ogs/
-[Uu]serSettings/
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ss]andbox/
+/[Pp]lugins/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
 Assets/AssetStoreTools*
 Assets/ThirdPartySDK/
 ![Aa]ssets
 [Aa]ssets/*
 ![Aa]ssets/3DProject
+/[Mm]emoryCaptures/
 
 # Visual Studio cache directory
 .vs/
