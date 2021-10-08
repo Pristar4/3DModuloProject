@@ -21,6 +21,9 @@ Assets/Plugins/Editor/JetBrains*
 [Ll]ogs/
 Assets/AssetStoreTools*
 Assets/ThirdPartySDK/
+![Aa]ssets
+[Aa]ssets/*
+![Aa]ssets/3DProject
 
 # Visual Studio cache directory
 .vs/
