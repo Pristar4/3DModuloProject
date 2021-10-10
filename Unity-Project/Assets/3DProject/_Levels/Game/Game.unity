@@ -3668,9 +3668,20 @@ MonoBehaviour:
   m_ExcludedPropertiesInInspector:
   - m_Script
   m_LockStageInInspector: 
+  m_ValidatingStreamVersion: 20170927
+  m_OnValidateCalled: 1
   m_StreamingVersion: 20170927
   m_Priority: 20
+  m_ActivationId: 0
+  <FollowTargetAttachment>k__BackingField: 0
+  <LookAtTargetAttachment>k__BackingField: 0
   m_StandbyUpdate: 2
+  <mExtensions>k__BackingField: []
+  <PreviousStateIsValid>k__BackingField: 0
+  m_WasStarted: 0
+  mSlaveStatusUpdated: 0
+  m_parentVcam: {fileID: 0}
+  m_QueuePriority: 2147483647
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
@@ -3683,14 +3694,21 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1.7777778, y: 1}
+    m_OrthoFromCamera: 0
+    m_PhysicalFromCamera: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
     m_OnCameraLive:
       m_PersistentCalls:
         m_Calls: []
+      m_CallsDirty: 1
   m_LegacyBlendHint: 0
+  <UserIsDragging>k__BackingField: 0
+  m_ComponentPipeline: []
   m_ComponentOwner: {fileID: 2070925443263042942}
+  mCachedLookAtTarget: {fileID: 0}
+  mCachedLookAtTargetVcam: {fileID: 0}
 --- !u!1 &2070925442822153541
 GameObject:
   m_ObjectHideFlags: 0
@@ -3740,9 +3758,20 @@ MonoBehaviour:
   m_ExcludedPropertiesInInspector:
   - m_Script
   m_LockStageInInspector: 
+  m_ValidatingStreamVersion: 20170927
+  m_OnValidateCalled: 1
   m_StreamingVersion: 20170927
   m_Priority: 10
+  m_ActivationId: 1
+  <FollowTargetAttachment>k__BackingField: 1
+  <LookAtTargetAttachment>k__BackingField: 1
   m_StandbyUpdate: 2
+  <mExtensions>k__BackingField: []
+  <PreviousStateIsValid>k__BackingField: 1
+  m_WasStarted: 1
+  mSlaveStatusUpdated: 1
+  m_parentVcam: {fileID: 0}
+  m_QueuePriority: 10
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 742921200880941111}
   m_Lens:
@@ -3755,14 +3784,23 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1.7777778, y: 1}
+    m_OrthoFromCamera: 0
+    m_PhysicalFromCamera: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
     m_OnCameraLive:
       m_PersistentCalls:
         m_Calls: []
+      m_CallsDirty: 1
   m_LegacyBlendHint: 0
+  <UserIsDragging>k__BackingField: 0
+  m_ComponentPipeline:
+  - {fileID: 2070925443526839467}
+  - {fileID: 2070925443526839466}
   m_ComponentOwner: {fileID: 2070925443526839471}
+  mCachedLookAtTarget: {fileID: 0}
+  mCachedLookAtTargetVcam: {fileID: 0}
 --- !u!4 &2070925443028286827
 Transform:
   m_ObjectHideFlags: 0
@@ -3809,16 +3847,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6043bde05a7fc4cba197d06915c1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_vcamOwner: {fileID: 0}
+  mCachedFollowTarget: {fileID: 0}
+  mCachedFollowTargetVcam: {fileID: 0}
+  mCachedLookAtTarget: {fileID: 0}
+  mCachedLookAtTargetVcam: {fileID: 0}
   Damping: {x: 0.1, y: 0.25, z: 0.3}
   ShoulderOffset: {x: 0.7, y: 0.25, z: 0}
   VerticalArmLength: 0
   CameraSide: 1
   CameraDistance: 2.5
   CameraCollisionFilter:
-    serializedVersion: 2
     m_Bits: 1
   IgnoreTag: Player
   CameraRadius: 0.15
+  m_PreviousFollowTargetPosition: {x: 0, y: 0, z: 0}
+  m_DampingCorrection: {x: 0, y: 0, z: 0}
 --- !u!114 &2070925443263042939
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -3831,10 +3875,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_vcamOwner: {fileID: 0}
+  mCachedFollowTarget: {fileID: 0}
+  mCachedFollowTargetVcam: {fileID: 0}
+  mCachedLookAtTarget: {fileID: 0}
+  mCachedLookAtTargetVcam: {fileID: 0}
   m_NoiseProfile: {fileID: 11400000, guid: 46965f9cbaf525742a6da4c2172a99cd, type: 2}
   m_PivotOffset: {x: 0, y: 0, z: 1}
   m_AmplitudeGain: 0.5
   m_FrequencyGain: 0.3
+  mInitialized: 0
+  mNoiseTime: 0
   mNoiseOffsets: {x: -451.37964, y: 684.7062, z: 648.0488}
 --- !u!4 &2070925443263042942
 Transform:
@@ -3893,10 +3944,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_vcamOwner: {fileID: 0}
+  mCachedFollowTarget: {fileID: 0}
+  mCachedFollowTargetVcam: {fileID: 0}
+  mCachedLookAtTarget: {fileID: 0}
+  mCachedLookAtTargetVcam: {fileID: 0}
   m_NoiseProfile: {fileID: 11400000, guid: 46965f9cbaf525742a6da4c2172a99cd, type: 2}
   m_PivotOffset: {x: 0, y: 0, z: 1}
   m_AmplitudeGain: 0.5
   m_FrequencyGain: 0.3
+  mInitialized: 0
+  mNoiseTime: 0
   mNoiseOffsets: {x: -451.37964, y: 684.7062, z: 648.0488}
 --- !u!114 &2070925443526839467
 MonoBehaviour:
@@ -3910,16 +3968,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6043bde05a7fc4cba197d06915c1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_vcamOwner: {fileID: 2070925443028286826}
+  mCachedFollowTarget: {fileID: 742921200880941111}
+  mCachedFollowTargetVcam: {fileID: 0}
+  mCachedLookAtTarget: {fileID: 0}
+  mCachedLookAtTargetVcam: {fileID: 0}
   Damping: {x: 0.1, y: 0.25, z: 0.3}
   ShoulderOffset: {x: 0.7, y: 0.25, z: 0}
   VerticalArmLength: 0
   CameraSide: 1
   CameraDistance: 4
   CameraCollisionFilter:
-    serializedVersion: 2
     m_Bits: 1
   IgnoreTag: Player
   CameraRadius: 0.15
+  m_PreviousFollowTargetPosition: {x: 0, y: 1.375, z: 0}
+  m_DampingCorrection: {x: 0, y: 0, z: 0}
 --- !u!114 &2070925443526839470
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -5694,6 +5758,7 @@ GameObject:
   - component: {fileID: 2907379808790080411}
   - component: {fileID: 8653428074869579031}
   - component: {fileID: 4952123202511339879}
+  - component: {fileID: 4952123202511339884}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -5701,6 +5766,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4952123202511339884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4952123202511339883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 658a72f35b4923647ab7a06c40a93128, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4997857232191319022
 Transform:
   m_ObjectHideFlags: 0
@@ -7552,18 +7629,22 @@ MonoBehaviour:
     m_Style: 1
     m_Time: 0.1
     m_CustomCurve:
-      serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
   m_CustomBlends: {fileID: 0}
+  m_OutputCamera: {fileID: 8944336656349189699}
   m_CameraCutEvent:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+    m_CallsDirty: 1
+  mNextFrameId: 1
+  mActiveCameraPreviousFrameGameObject: {fileID: 2070925443028286612}
 --- !u!4 &9099708841360265119
 Transform:
   m_ObjectHideFlags: 0
