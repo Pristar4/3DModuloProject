@@ -56,6 +56,8 @@ jobs:
         with:
           name: Test results (${{ matrix.testMode }})
           path: ${{ steps.testRunner.outputs.artifactsPath }}
+          projectPath: 3DModuloProject/Unity-Project/
+          unityVersion: 2021.1.24f1
 
   buildWebGL:
     needs: testRunner
@@ -108,6 +110,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        
 
       - name: Create LFS file list
         run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
@@ -118,6 +121,8 @@ jobs:
         with:
           path: .git/lfs
           key: ${{ runner.os }}-lfs-${{ hashFiles('.lfs-assets-id') }}
+          projectPath: 3DModuloProject/Unity-Project/
+          unityVersion: 2021.1.24f1
 
       - name: Git LFS Pull
         run: |
