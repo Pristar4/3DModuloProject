@@ -1,7 +1,11 @@
-﻿namespace _3DProject.Scripts
+﻿using UnityEngine;
+
+namespace _3DProject.Scripts
 {
-    public class ShootingController
+    public class ShootingController : MonoBehaviour
     {
-        
+        private void Awake()
+        {
+        }
     }
 }
