@@ -32,7 +32,7 @@ jobs:
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
-          projectPath: 3DModuloProject/Unity-Project/ProjectSettings/      
+          projectPath: 3DModuloProject/Unity-Project/   
           targetPlatform: ${{ matrix.targetPlatform }}
       - uses: actions/upload-artifact@v2
         with:
