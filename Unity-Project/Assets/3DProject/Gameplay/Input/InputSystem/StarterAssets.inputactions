@@ -38,10 +38,10 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Trigger",
-                    "type": "Button",
+                    "name": "Aim",
+                    "type": "PassThrough",
                     "id": "87509a20-e4ea-41bb-84fe-ec6a7db7a460",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
                 }
@@ -226,11 +226,11 @@
                 {
                     "name": "",
                     "id": "89ec4fd8-b877-4da6-af31-4f1822de8f3c",
-                    "path": "<Mouse>/leftButton",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Trigger",
+                    "action": "Aim",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

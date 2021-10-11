@@ -11,7 +11,7 @@ namespace StarterAssets
         public Vector2 look;
         public bool jump;
         public bool sprint;
-        public bool isTrigger;
+        public bool aim;
 
         [Header("Movement Settings")] public bool analogMovement;
 
@@ -44,9 +44,9 @@ namespace StarterAssets
             SprintInput(value.isPressed);
         }
 
-        public void OnTrigger(InputValue value)
+        public void OnAim(InputValue value)
         {
-            TriggerInput(value.isPressed);
+            AimInput(value.isPressed);
         }
 #else
 	// old input sys if we do decide to have it (most likely wont)...
@@ -73,6 +73,11 @@ namespace StarterAssets
             sprint = newSprintState;
         }
 
+        private void AimInput(bool newAimState)
+        {
+            aim = newAimState;
+        }
+
 #if !UNITY_IOS || !UNITY_ANDROID
 
         private void OnApplicationFocus(bool hasFocus)
@@ -85,10 +90,6 @@ namespace StarterAssets
             Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
         }
 
-        private void TriggerInput(bool newTriggerState)
-        {
-            isTrigger = newTriggerState;
-        }
 
 #endif
     }
