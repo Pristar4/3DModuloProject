@@ -1,47 +1,22 @@
-<div id="top"></div>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
 
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/Pristar4/3DModuloProject">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-<h3 align="center">project_title</h3>
+
+
+
+<h3 align="center">3DModuloProject</h3>
 
   <p align="center">
-    project_description
+    Unity Playground 
     <br />
-    <a href="https://github.com/Pristar4/3DModuloProject"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Pristar4/3DModuloProject/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Pristar4/3DModuloProject">View Demo</a>
+    <a href="https://github.com/Pristar4/3DModuloProject/tree/master/Unity-Project">View Demo</a>
     ·
     <a href="https://github.com/Pristar4/3DModuloProject/issues">Report Bug</a>
     ·
@@ -82,13 +57,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following:  `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
+The Intention for this Project is purely for experimenting and learning 
 
 
 
@@ -101,7 +70,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Prerequisites
 
--Unity 2021.2.0b14 
+-Unity 2021.1.24f1
 
 
 
@@ -111,11 +80,9 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- ROADMAP -->
 ## Roadmap
 
-- [] Inventory System
-- [] Fight System
-- [] Enemy System
-    - [] Enemies
-    - [] AI
+- [] Demo
+- [] Input System
+
 
 See the [open issues](https://github.com/Pristar4/3DModuloProject/issues) for a full list of proposed features (and known issues).
 
