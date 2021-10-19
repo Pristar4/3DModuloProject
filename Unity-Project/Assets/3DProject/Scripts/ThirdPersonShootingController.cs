@@ -2,6 +2,7 @@ using Cinemachine;
 using StarterAssets;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
+using UnityEngine.VFX;
 
 namespace _3DProject.Scripts
 {
@@ -14,9 +15,11 @@ namespace _3DProject.Scripts
         [SerializeField] private Camera fpsCam;
         [SerializeField] CinemachineVirtualCamera aimVirtualCamera;
         [SerializeField] private Transform weaponout;
+        [SerializeField] private VisualEffect visualEffect;
         private readonly float damage = 10f;
 
         private readonly float range = 100f;
+
 
         private Rig rig;
 
@@ -46,6 +49,7 @@ namespace _3DProject.Scripts
             {
                 Shoot();
             }
+
 
             if (starterAssetsInputs.aim)
             {
@@ -84,6 +88,12 @@ namespace _3DProject.Scripts
         void Shoot()
         {
             RaycastHit hit;
+
+            visualEffect.Play();
+
+
+            #region Checker
+
             if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
             {
                 Target target = hit.transform.GetComponent<Target>();
@@ -97,6 +107,8 @@ namespace _3DProject.Scripts
 
                 Debug.Log(hit.transform.name);
             }
+
+            #endregion
         }
     }
 }
