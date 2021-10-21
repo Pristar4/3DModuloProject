@@ -81,7 +81,6 @@ The Intention for this Project is purely for experimenting and learning
 ## Roadmap
 
 - [] Demo
-- [] Input System
 
 
 See the [open issues](https://github.com/Pristar4/3DModuloProject/issues) for a full list of proposed features (and known issues).
