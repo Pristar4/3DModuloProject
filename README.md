@@ -70,7 +70,7 @@ The Intention for this Project is purely for experimenting and learning
 
 ### Prerequisites
 
--Unity 2021.1.24f1
+-Unity 2021.1.+
 
 
 
